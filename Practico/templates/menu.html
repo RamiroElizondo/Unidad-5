@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="static/css/styles.css">    
+</head>
+<body class="bodyImagenes">
+    <span>Bienvenido {{user.nombre}}</span>
+    <header>
+        <h1>Menu Sancho Panza</h1>
+    </header>
+    <div class="boton">
+        <form>
+            <a class="BotonMenu"  href="{{url_for('receta')}}" > Ingresar Receta</a><br><br>
+            <a class="BotonMenu" href="{{url_for('ranking')}}" > Consultar Ranking</a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultar_tiempo')}}" > Consultar receta por tiempo de elaboracion</a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultar_ingrediente')}}"  > Consultar receta por ingrediente</a><br><br>
+            <a class="BotonMenu" href="{{url_for('bienvenido')}}"  > Cerrar Sesion</a><br><br>
+        </form>
+    </div>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,548 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100%;
+}
+.bodybienvenido{
+    background-image: url(fondo-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+span{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #393939;
+    color: white;
+    border-radius: 0px 90px 80px 0px;
+}
+#spannombre{
+    display: block;
+    float:right;
+    line-height: normal;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #393939;
+    color: white;
+    text-align: right;
+    border-radius: 90px 0px 0px 90px;
+}
+
+header{
+    width: 90%;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.25em;
+    word-spacing: 0.25em;
+}
+h1{
+    text-align: center;
+}
+
+body {
+    font-family: monospace;
+    background: #fdf7ec;
+    text-align: start;
+}
+label{
+    color:white;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.bodyImagenes{
+    background-image: url(fondo-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bodyInicio{
+    background-image: url(fondo-ranking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 8%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 2em;
+    height: calc(100vh-1em);
+}
+.pie {
+    /*padding: 30px;
+    max-width: 100%;
+    max-height: 10%;
+    display: block;*/
+    font: bold 30px;
+    background-color: black;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+/*Style Bienvenido*/
+
+.botones{
+    padding: 10px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 367px;
+}
+.Boton{
+    margin: 10px;
+    border-radius: 80px;
+    margin-bottom: 150px;
+    background-color: #6d6875;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 500ms;
+}
+.Boton:hover{
+    background-color: #edf2f4;
+}
+
+.BotonIngresar {
+    margin: 10px;
+    border-radius: 80px;
+    background-color: #6d6875;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    transition-duration: 500ms;
+}
+.BotonIngresar:hover{
+    background-color: #edf2f4;
+}
+.BotonReceta,.BotonRanking,.BotonTiempoE,.BotonIngrediente{
+    margin: 10px;
+    border-radius: 80px;
+    background-color: #457b9d;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.BotonReceta:hover,.BotonRanking:hover,.BotonTiempoE:hover,.BotonIngrediente:hover{
+    background-color: #a8dadc;
+}
+
+.boton{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.BotonMenu{
+    border-radius: 80px;
+    margin-top: -10px;
+    margin-bottom: 19.5px;
+    background-color: #6d6875;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 500ms;
+    display: inline-block;
+}
+.BotonMenu:hover{
+    background-color: #edf2f4;
+}
+.BotonGuardar{
+    margin: 5%;
+    border-radius: 80px;
+    background-color: #08b1b1;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+.BotonGuardar:hover{
+    background-color: #77be77;
+}
+
+.BotonGuardar2{
+    margin: 5%;
+    border-radius: 80px;
+    background-color: #61a72c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+.BotonGuardar2:hover{
+    background-color: #92c292;
+}
+.recetas2{
+    display: inline-block;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 80px;
+    background-color: #61a72c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.recetas2:hover {
+    box-shadow: 0 0 40px 40px #92c292 inset;
+}
+
+.BotonGuardar3{
+    margin: 5%;
+    border-radius: 80px;
+    background-color: #9e4acf;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+.BotonGuardar3:hover{
+    background-color: #b183cc;
+}
+.recetas3{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 80px;
+    background-color: #9e4acf;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.recetas3:hover {
+    box-shadow: 0 0 40px 40px #b183cc inset;
+}
+
+input{
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    color: #393939;
+    font-size: 12px;
+    padding: 5px;
+}
+.BotonIr{
+    background: #31c9c1;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+.BotonIr:hover {
+    box-shadow: 0 0 40px 40px #6eacc5 inset;
+}
+
+/*Style Error*/
+.error{
+    height: 100vh;
+}
+#tituloE{
+    color: white;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -200px;
+    border-radius: 200px;
+    line-height: 300px;
+}
+
+.Pranking{
+    background: #d791e2;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    padding: 10px 15px;
+    border: 4px solid #231942;
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    display: inline-block;
+}
+.Pranking:hover {
+    box-shadow: 0 0 40px 40px #f804c3 inset;
+}
+h2{
+    background: #45064e;
+    color: white;
+    letter-spacing: 0.30em;
+    word-spacing: 0.25em;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    padding: 10px 15px;
+    border: 3px solid #231942;
+    font-size: 15px;
+    font-weight: bolder;
+    display: inline-block;
+}
+.parrafoT{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 39%;
+    margin-right: 30%;
+    background: #457b9d;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #393939;
+}
+.recetas{
+    display: inline-block;
+    margin-left: 654px;
+    margin-top: 10%;
+    border-radius: 80px;
+    background-color: #31c9c1;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.recetas:hover {
+    box-shadow: 0 0 40px 40px #6eacc5 inset;
+}
+
+.BotonVolver{
+    border-radius: 80px;
+    margin-bottom: 19.5px;
+    margin-left: 640px;
+    margin-top: 78px;
+    background-color: #611674;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+}
+.BotonVolver:hover {
+    box-shadow: 0 0 40px 40px #633c5a inset;
+}
+.botonG{
+    box-shadow: 0 0 40px 40px #633c5a inset;
+}
+
+.BotonBuscar {
+    margin: 10px;
+    border-radius: 80px;
+    background-color: rgb(119, 91, 14);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-bottom: 203px;
+}
+.BotonBuscar:hover{
+    background-color: #c4bc58;
+}
+
+/*Styles MostrarRUI*/
+.padre{
+
+    margin-top: 10%;
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%;
+}
+.datosI{
+    width: 60%;
+    text-align: center;
+    font-size: bold 60px;
+}
+.table{
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
+}
+
+th, td{
+    font-size: 15px;
+    font-family:cursive;
+    padding: 0.2em 0.8em;
+    border-radius: 12px;
+    border: 3px dotted #ffffff; 
+    background: #d4a373;
+}
+.datosR, .datosC{
+    border: 4px dotted #ffffff;
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 20%;
+    text-align: center;
+    border-radius: 80px;
+    background: #d4a373;
+    color: white;
+    padding: 2%;
+}
+button{
+    background-color: #d4a373;
+    border:0;
+}
+.imgLike{
+    margin-top:30%;
+    background-size: cover;
+    background-position: center;
+    background: #d4a373;
+}
+
+.BotonVolver2{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 80px;
+    background-color: rgb(119, 91, 14);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.BotonVolver2:hover{
+    background-color: #c4bc58
+}
+
+.BotonVolver3{
+    display: inline-block;
+    margin-top: 20%;
+    margin-left:650px;
+    border-radius: 80px;
+    background-color: rgb(44, 44, 43);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.BotonVolver3:hover{
+    background-color: rgba(71, 66, 66, 0.333);
+}
+
+.BotonMostrar{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 80px;
+    background-color: #31c9c1;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.BotonMostrar:hover{
+    background-color: #6eacc5;
+}
+
+.Select{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left:100px;
+    width: 30%;
+    font-family: monospace;
+    border-radius: 80px;
+    background-color: #31c9c1;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+.Select:hover{
+    background-color: #6eacc5;
+}
+.BotonMostrar2{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 80px;
+    background-color: rgb(44, 44, 43);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+
+.BotonMostrar2:hover{
+    background-color: rgba(71, 66, 66, 0.333);
+}
+
+.Select2{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left:500px;
+    width: 30%;
+    font-family: monospace;
+    border-radius: 80px;
+    background-color: rgb(44, 44, 43);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-top: 0,5%;
+    margin-bottom: 0,5%;
+}
+.Select2:hover{
+    background-color: rgba(71, 66, 66, 0.333);
+}
+

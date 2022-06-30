@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body class="bodyInicio">
+    <header>
+        <h1>Iniciar Sesion</h1>
+    </header>
+    <div class="form">
+        <form action="{{url_for('verificar')}}" method="POST">
+            <label for="correo" style="color:black">Correo Electronico</label><br>
+            <input type="email" name="correo" placeholder="Correo Electronico"><br><br>
+            <label for="contra" style="color:black">Contraseña</label><br>
+            <input type="password" name="clave" placeholder="Contraseña"><br><br>
+            <input class="BotonIngresar" type="submit" value="Ingresar"><br>
+        </form>
+    </div>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

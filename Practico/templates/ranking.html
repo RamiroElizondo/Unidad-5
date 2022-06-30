@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="static/css/styles.css">   
+</head>
+<body class="bodyImagenes">
+    <span>{{user.nombre}}</span>
+    <span id="spannombre">Sancho Panza</span>
+    <header>
+        <h1>Ranking</h1>
+    </header>   
+    <h2>RECETA</h2>
+    <h2>NOMBRE</h2>
+    <h2>LIKES</h2>
+    {% for item in lista %}
+        <p class="Pranking"> {{item.nombre}}</p>
+        <p class="Pranking"> {{item.usuario.nombre}}</p>
+        <p class="Pranking"> {{item.cantidadmegusta}}</p>
+    {% endfor %}
+
+    <a class="BotonVolver" href="{{url_for('menu')}}" >Volver a Menu</a>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bodyImagenes">
+    <span>{{user1.nombre}}</span>
+    <span id="spannombre">Sancho Panza</span>
+    <header>
+        <h1>Receta {{receta.nombre}}</h1>
+    </header>
+    <div class="padre">
+        <div class="datosR">
+            <p>Tiempo: {{receta.tiempo}}</p><br>
+            <p>Elaboracion {{receta.elaboracion}} </p>
+        </div>
+        <div class="datosI">
+            <h1 style="color:white">Ingredientes</h1>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th><strong>Nombre</strong></td>
+                        <th><strong>Cantidad</strong></td>
+                        <th><strong>Unidad</strong></td>
+                    </tr>
+                    {% for elem in listaI %}
+                        <tr>
+                            <td><strong>{{elem.nombre}}</strong></td>
+                            <td><strong>{{elem.cantidad}}</strong></td>
+                            <td><strong>{{elem.unidad}}</strong></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <div class="datosC">
+            <form action="{{url_for('megusta')}}" method="POST">
+                <h1>Compartido por: {{user.nombre}}</h1>
+                <button type="submit" name="megusta" value="megusta">
+                    <img class="imgLike"src="/static/css/botonlike2.png">
+                </button>
+                
+                <!--<input class="BotonIngresar" type="button" value="/static/img/botonlike.png"><br>
+                <a type="submit"><img id="mg" src="/static/css/botonlike.png" ></a>-->
+            </form>
+        </div>
+    </div>
+    <a class="recetas2" href="{{url_for('menu')}}" >Volver a Menu</a>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

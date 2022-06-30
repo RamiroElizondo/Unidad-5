@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bodyImagenes">
+    <span>{{ user.nombre}}</span>
+    <span id="spannombre">Sancho Panza</span>
+    <header>
+        <h1>Ingredientes -{{contador}}-</h1>
+    </header>
+    <div class="form">
+        <form action="{{url_for('guardaringrediente')}}" method="POST">
+            <label for="nombre">Nombre Ingrediente:</label><br>
+            <input type="text" name="nombre" placeholder="Nombre Ingrediente"><br><br>
+                
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="text" name="cantidad" placeholder="Cantidad"><br><br>
+        
+            <label for="unidad">Unidad de Medida:</label><br>
+            <input type="text" name="unidad" placeholder="Unidad de Medida"><br><br>
+                
+            <input class="BotonGuardar3" type="submit" value="Guardar"><br>
+            <a class="recetas3" href="{{url_for('receta')}}" >Terminar</a>
+        </form>
+    </div>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

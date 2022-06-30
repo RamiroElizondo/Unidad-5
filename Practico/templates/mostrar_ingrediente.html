@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bodyImagenes">
+    <span>{{user.nombre}}</span>
+    <span id="spannombre">Sancho Panza</span>
+    <header>
+        <h1>Mostrar Ingredientes</h1>
+    </header>
+    <form action="{{url_for('buscarelmostrar')}}" method="POST">
+        <select name="nombre" style="border-radius: 80px" class="Select2">
+            {% for item in lista %}
+                <option value="{{item.nombre}}">{{item.nombre}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Mostrar" class="BotonMostrar2">
+    </form>
+    <a class="BotonVolver3" href="{{url_for('menu')}}" >Volver a Menu</a>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

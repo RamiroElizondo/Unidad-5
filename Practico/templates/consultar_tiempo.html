@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Tiempo</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bodyImagenes">
+    <span>{{user.nombre}}</span>
+    <span id="spannombre">Sancho Panza</span>
+    <header>
+        <h1>Consultar Tiempo</h1>
+    </header>
+    <div class="form">
+        {% if list == None%}
+        <form action="{{url_for('consultar_tiempo')}}"method="POST">
+            <label for="tiempo" style="color:white">Ingrese Tiempo de Elaboracion:</label><br>
+            <input type="int" name="tiempo" placeholder="Tiempo"><br><br>
+            <input class="BotonIr" type="submit" value="Ir"><br>
+        </form>
+        {%endif%}
+        {%if list !=None%}
+            <label>Recetas con menor tiempo ingresado</label><br>
+            <form action="{{url_for('buscarelmostrar')}}" method="POST">
+                <select class="Select" name="nombre" style="border-radius: 80px">
+                    {%for item in list%}
+                        <option value="{{item.nombre}}">{{item.nombre}}</option>
+                    <!--<p class="parrafoT">{{item.nombre}}</p>-->
+                    {%endfor%}
+                </select>
+                <input class="BotonMostrar" type="submit" value="Mostrar">
+            </form>
+        {%endif%}
+    </div>
+    <div ><a class="recetas" href="{{url_for('menu')}}" >Volver a Menu</a></div>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>

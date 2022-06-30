@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body style="background: #ffd166">
+    <header>
+        <h1>Registro</h1>
+    </header>
+    <div class="form">
+        <form action="{{url_for('bienvenido')}}" method="POST">
+
+            <label for="nombre">Nombre</label><br>
+            <input type="email" name="correo" placeholder="Correo Electronico"><br><br>
+            
+            <label for="correo">Correo Electronico</label><br>
+            <input type="email" name="correo" placeholder="Correo Electronico"><br><br>
+            
+            <label for="contra">Contraseña</label><br>
+            <input type="password" name="clave" placeholder="Contraseña"><br><br>
+
+
+            
+            <input class="BotonIngresar" type="submit" value="Ingresar"><br>
+
+        </form>
+    </div>
+    <footer class="pie">
+        Ramiro Elizondo - Octavio Garello - 2022 
+    </footer>
+</body>
+</html>
